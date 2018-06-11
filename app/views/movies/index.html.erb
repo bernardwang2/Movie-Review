@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+
 
 <h1>Movies</h1>
 
@@ -16,6 +16,7 @@
   <tbody>
     <% @movies.each do |movie| %>
       <tr>
+        <td><%= image_tag movie.image.url(:medium) %></td>
         <td><%= movie.title %></td>
         <td><%= movie.release_date %></td>
         <td><%= movie.genre %></td>
